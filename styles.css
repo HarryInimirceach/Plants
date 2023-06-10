@@ -79,6 +79,10 @@ body {
   flex: 1;
 }
 
+.burger {
+  display: none;
+}
+
 .navigation li:not(:last-child) {
   margin-left: 46px;
 }
@@ -617,6 +621,10 @@ body {
   .prices_column:last-child {
     align-items: center;
   }
+
+  .button_price {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 623px) {
@@ -774,5 +782,27 @@ body {
   }
   .social_media li {
     margin-bottom: 10px;
+  }
+  .burger {
+    display: inline-block;
+  }
+  .burger_button {
+    width: 40px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid #717171;
+    border-left: none;
+    border-right: none;
+  }
+
+  .burger_button::before {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 9px;
+    border: 2px solid #717171;
+    border-left: none;
+    border-right: none;
   }
 }
